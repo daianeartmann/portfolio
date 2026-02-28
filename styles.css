@@ -27,6 +27,7 @@ li {
     justify-content: space-between;
     align-items: center;
     padding: 20px 40px;
+    position: relative;
 }
 
 .menu {
@@ -281,4 +282,30 @@ li {
     background: #3f0717;
     color: #fcd8df;
     margin-top: 10px;
+}
+
+#hamburguer {
+    display: none;
+    font-size: 20px;
+    background: none;
+    cursor: pointer;
+    color: #fcd8df;
+}
+
+@media (max-width: 768px) {
+    #hamburguer {
+        display: block
+    }
+    .menu {
+        position: absolute;
+        top: 70px;
+        right: 40px;
+        gap: 15px;
+        background: #111;
+        flex-direction: column;
+        display: none;
+    }
+    .menu.ativa {
+        display: flex;
+    }
 }
