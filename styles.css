@@ -62,7 +62,7 @@ li {
 
 /* SOBRE*/
 #sobre {
-    height: 40vh;
+    min-height: 20vh;
     padding: 1em;
 }
 
