@@ -36,7 +36,7 @@ li {
 }
 
 .hero {
-    height: 35vh;
+    min-height: 30vh;
     background: radial-gradient(circle at top, #590d22, #3f0717);
     /*background-color: #3f0717;*/
 }
@@ -286,10 +286,11 @@ li {
 
 #hamburguer {
     display: none;
-    font-size: 20px;
+    font-size: 28px;
     background: none;
     cursor: pointer;
-    color: #fcd8df;
+    color: #fff;
+    border: none;
 }
 
 @media (max-width: 768px) {
@@ -301,7 +302,7 @@ li {
         top: 70px;
         right: 40px;
         gap: 15px;
-        background: #111;
+        background: #590d22;
         flex-direction: column;
         display: none;
     }
